@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div id="image">
+        <div id="logo">
+            <img src="./images/logo.png">
+            <span>ODIN</span>
+        </div>
+    </div>
+    <div id="content">
+        <p>Welcome to our platform.<br>We're glad you're here and ready to get started.
+        <br>Creating an account helps you access everything in one place.</p>
+        <p>Let's set up your profile in just a few steps.</p>
+
+        <form>
+            <ul class="formli">
+            <ul><li><label for="first_name">FIRST NAME</label>
+            <li><input type="text" id="first_name"></ul>
+            <ul><li><label for="user_email">EMAIL</label>
+            <li><input type="email" id="user_email"></ul>
+            <ul><li><label for="user_password">PASSWORD</label>
+            <li><input type="password" id="user_password"></ul>
+            </ul>
+            <ul class="formli">
+            <ul><li><label for="last_name">LAST NAME</label>
+            <li><input type="text" id="last_name"></ul>
+            <ul><li><label for="phone_number">PHONE NUMBER</label>
+            <li><input type="tel" id="phone_number" pattern="[0-9]{10}" maxlength="10" required></ul>
+            <ul><li><label for="confirm_password">CONFIRM PASSWORD</label>
+            <li><input type="password" id="confirm_password"></ul>
+            </ul>
+        </form>
+
+        <button>Create Account</button>
+        <p>Already have an account?<a  href="#">Login</a></p>
+    </div>
+</body>
+</html>

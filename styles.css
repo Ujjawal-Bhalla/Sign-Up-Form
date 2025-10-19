@@ -1,0 +1,95 @@
+/* Reset everything */
+* {
+    margin: 0;
+    padding: 0;
+    border:0;
+    box-sizing: border-box;
+    font: inherit;
+    vertical-align: baseline;}
+html, body {
+    height: 100%;}
+@font-face {
+    font-family: fa;
+    src: url(./fonts/Norse-Bold.otf);}
+body{
+    display: flex;
+    margin:0;
+    gap:40px;
+}
+#image{
+    flex:4;
+    background: url(./images/stock.jpg) center/cover no-repeat;
+}
+#logo img{
+    height:auto;
+    width:100px;
+
+}
+#logo *{z-index: 1;}
+#logo{
+    display:flex;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    margin-top:250px;
+}
+span{
+    font-family: fa;
+    font-size: 6em;
+    color: white;
+}
+#logo::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.4); /* black overlay with 40% opacity */
+}
+#content{
+    flex:6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:100px;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    font-weight: 300;
+}
+form{display:flex;
+    gap:100px;}
+.formli{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+ul{list-style-type:none;}
+input{
+    border:1px solid #E5E7EB;
+}
+input:focus{
+    border:1px solid blue;
+    outline:none;
+}
+#user_password:invalid,#confirm_password:invalid {
+  border: 1px solid red;
+}
+label{ color: rgb(53, 54, 53);
+font-family: 'Courier New', Courier, monospace;
+font-weight: bold;
+}
+button{
+background-color: #596D48;
+border-radius: 6px;
+border: none;
+padding:14px;
+width:fit-content;
+font-family: 'Courier New', Courier, monospace;
+font-weight: bold;
+color: #E5E7EB;
+}
+a{
+    text-decoration: none;
+    color:#596D48;
+    font-weight:bold;
+}
